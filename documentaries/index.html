@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.share-widget {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 9999;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.share-widget button {
+margin: 5px;
+padding: 10px;
+}
+
+/* Minimize button */
+.share-widget .minimize {
+position: absolute;
+top: -30px;
+right: 0;
+}
+
+.share-widget.minimized .minimize {
+top: 0;
+}
+
+.share-widget.minimized {
+height: 40px;
+transition: height 0.2s;
+}
+</style>
+</head>
+>
+<div class="share-widget">
+<button class="minimize" onclick="toggleMinimize()">Close/Open</button>
+<button onclick="shareToReddit(https://soap4today.github.io/home/)">Share to Reddit</button>
+<button onclick="shareToTwitter(https://soap4today.github.io/home/)">Share to Twitter</button>
+<button onclick="shareToFacebook(https://soap4today.github.io/home/)">Share to Facebook</button>
+<button onclick="shareToTelegram(https://soap4today.github.io/home/)">Share to Telegram</button>
+</div>
+
+<script>
+function toggleMinimize() {
+const widget = document.querySelector('.share-widget');
+widget.classList.toggle('minimized');
+}
+
+function shareToReddit() {
+// Code to share to Reddit
+console.log("Sharing to Reddit...");
+}
+
+function shareToTwitter() {
+// Code to share to Twitter
+console.log("Sharing to Twitter...");
+}
+
+function shareToFacebook() {
+// Code to share to Facebook
+console.log("Sharing to Facebook...");
+}
+
+function shareToTelegram() {
+// Code to share to Telegram
+console.log("Sharing to Telegram...");
+}
+</script>  
+  
+<title>Home | Soap4today</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #222;
+padding: 20px;
+color: white;
+text-align: center;
+}
+
+nav {
+background-color: #333;
+padding: 10px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin-right: 10px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+}
+
+section {
+padding: 20px;
+}
+
+.movie {
+display: inline-block;
+width: 200px;
+margin: 10px;
+text-align: center;
+border: 1px solid #ccc;
+background-color: white;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+width: 180px;
+height: 250px;
+}
+
+.movie h3 {
+margin: 10px 0;
+}
+
+.movie p {
+color: #888;
+}
+</style>
+</head>
+>
+<header>
+<h1>Soap4today</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="404">Home</a></li>
+<li><a href="movies">Movies</a></li>
+<li><a href="documentaries">Documentaries</a></li>
+<li><a href="tvshows">TV Shows</a></li>
+<li><a href="actors">Actors</a></li>
+</ul>
+</nav>
+
+  <section>
+<div class="movie">
+<img src="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/mepffmbszgza1.jpg?v=1693373206038" alt="ambutakam">
+<li><a href="ambutakam">Ambutakam: The Rise & Fall of Dreamybull Documentary</a></li>
+<p>HD Quality</p>
+</div>
+</body>
+</html>
