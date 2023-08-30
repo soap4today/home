@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+/* Sidebar CSS */
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 200px;
+height: 100%;
+background-color: #f5f5f5;
+padding: 20px;
+}
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.sidebar li {
+margin-bottom: 10px;
+}
+.sidebar a {
+text-decoration: none;
+color: #333;
+}
+.sidebar a:hover {
+color: #666;
+}
+</style>
+</head>
+>
+<div class="sidebar">
+<ul>
+<li><a href="../home">Soap4today</a></li>
+<li><a href="../movies">Movies</a></li>
+<li><a href="../documentaries">Documentaries</a></li>
+<li><a href="../tv-shows">TV Shows</a></li>
+<li><a href="../actors">Actors</a></li>
+<li><a href="../reviews">Reviews</a></li>
+<li><a href="../contact">Contact</a></li>
+<li><a href="../home">© Soap4today</a></li>
+</ul>
+</div>
+
+<title>X-Men Origins - Wolverine (2009) | Soap4today</title>
+<link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+<style>
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+</style>
+</head>
+>
+<div class="center">
+<video
+id="my-video"
+class="video-js"
+controls
+preload="auto"
+width="750"
+height="500"
+poster="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/image44.jpg?v=1693435021918"
+data-setup="{}"
+>
+<source src="https://cdn.glitch.me/50728448-590e-4215-bf87-f7a5d528c9d3/X-Men%20Origins%20-%20Wolverine%20(2009).mp4?v=1693434766403" type="video/mp4" />
+<p class="vjs-no-js">
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that
+<a href="https://videojs.com/html5-video-support/" target="_blank"
+>supports HTML5 video</a
+>
+</p>
+</video>
+</div>
+
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+</body>
+</html>
