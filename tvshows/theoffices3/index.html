@@ -1,175 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <style>
-.share-widget {
+/* Sidebar CSS */
+.sidebar {
 position: fixed;
-bottom: 20px;
-right: 20px;
-z-index: 9999;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-}
-
-.share-widget button {
-margin: 5px;
-padding: 10px;
-}
-
-/* Minimize button */
-.share-widget .minimize {
-position: absolute;
-top: -30px;
-right: 0;
-}
-
-.share-widget.minimized .minimize {
 top: 0;
-}
-
-.share-widget.minimized {
-height: 40px;
-transition: height 0.2s;
-}
-</style>
-</head>
->
-<div class="share-widget">
-<button class="minimize" onclick="toggleMinimize()">Close/Open</button>
-<button onclick="shareToReddit(https://soap4today.github.io/home/)">Share to Reddit</button>
-<button onclick="shareToTwitter(https://soap4today.github.io/home/)">Share to Twitter</button>
-<button onclick="shareToFacebook(https://soap4today.github.io/home/)">Share to Facebook</button>
-<button onclick="shareToTelegram(https://soap4today.github.io/home/)">Share to Telegram</button>
-</div>
-
-<script>
-function toggleMinimize() {
-const widget = document.querySelector('.share-widget');
-widget.classList.toggle('minimized');
-}
-
-function shareToReddit() {
-// Code to share to Reddit
-console.log("Sharing to Reddit...");
-}
-
-function shareToTwitter() {
-// Code to share to Twitter
-console.log("Sharing to Twitter...");
-}
-
-function shareToFacebook() {
-// Code to share to Facebook
-console.log("Sharing to Facebook...");
-}
-
-function shareToTelegram() {
-// Code to share to Telegram
-console.log("Sharing to Telegram...");
-}
-</script>  
-  
-<title>Home | Soap4today</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-background-color: #f5f5f5;
-color: #333;
-margin: 0;
-padding: 0;
-}
-
-header {
-background-color: #222;
-padding: 20px;
-color: white;
-text-align: center;
-}
-
-nav {
-background-color: #333;
-padding: 10px;
-}
-
-nav ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
-
-nav ul li {
-display: inline;
-margin-right: 10px;
-}
-
-nav a {
-color: white;
-text-decoration: none;
-}
-
-section {
-padding: 20px;
-}
-
-.movie {
-display: inline-block;
+left: 0;
 width: 200px;
-margin: 10px;
-text-align: center;
-border: 1px solid #ccc;
-background-color: white;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+height: 100%;
+background-color: #f5f5f5;
+padding: 20px;
 }
-
-.movie img {
-width: 180px;
-height: 250px;
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
-
-.movie h3 {
-margin: 10px 0;
+.sidebar li {
+margin-bottom: 10px;
 }
-
-.movie p {
-color: #888;
+.sidebar a {
+text-decoration: none;
+color: #333;
+}
+.sidebar a:hover {
+color: #666;
 }
 </style>
 </head>
 >
-<header>
-<h1>Soap4today</h1>
-</header>
-
-<nav>
+<div class="sidebar">
 <ul>
-<li><a href="../home">Home</a></li>
+<li><a href="../home/home">Soap4today</a></li>
 <li><a href="../home/movies">Movies</a></li>
 <li><a href="../home/documentaries">Documentaries</a></li>
 <li><a href="../home/tvshows">TV Shows</a></li>
 <li><a href="../home/actors">Actors</a></li>
+<li><a href="../home/reviews">Reviews</a></li>
+<li><a href="../home/contact">Contact</a></li>
+<li><a href="../home">© Soap4today</a></li>
 </ul>
-</nav>
-
-  <section>
-<div class="movie">
-<img src="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/season2.jpg?v=1693454777023q" alt="gaywitchhunt">
-<li><a href="gaywitchhunt">Episode 1</a></li>
-<p>HD Quality</p>
 </div>
 
-  <section>
-<div class="movie">
-<img src="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/season2.jpg?v=1693454777023" alt="drugtesting">
-<li><a href="drugtesting">Episode 2</a></li>
-<p>HD Quality</p>
+<title>The Office: Season 3 - EP3 | Soap4today</title>
+<link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+<style>
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+</style>
+</head>
+>
+<div class="center">
+<video
+id="my-video"
+class="video-js"
+controls
+preload="auto"
+width="750"
+height="500"
+poster="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/jpg.jpg?v=1693456769434"
+data-setup="{}"
+>
+<source src="https://cdn.glitch.me/50728448-590e-4215-bf87-f7a5d528c9d3/The%20Office%20(US)%202x20%20-%20Drug%20Testing.mp4?v=1693457091736" type="video/mp4" />
+<p class="vjs-no-js">
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that
+<a href="https://videojs.com/html5-video-support/" target="_blank"
+>supports HTML5 video</a
+>
+</p>
+</video>
 </div>
 
-  <section>
-<div class="movie">
-<img src="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/season2.jpg?v=1693454777023" alt="spidermanacrossthespiderverse">
-<li><a href="conflictresolution">Episode 3</a></li>
-<p>HD Quality</p>
-</div>
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </body>
 </html>
