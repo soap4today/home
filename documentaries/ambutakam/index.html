@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
+<html>
+<body>
+DOCTYPE html>
+lang="en">
+>
 <style>
 /* Sidebar CSS */
 .sidebar {
@@ -13,20 +15,37 @@ height: 100%;
 background-color: #f5f5f5;
 padding: 20px;
 }
+
 .sidebar ul {
 list-style-type: none;
 padding: 0;
 margin: 0;
 }
+
 .sidebar li {
 margin-bottom: 10px;
 }
+
 .sidebar a {
 text-decoration: none;
 color: #333;
 }
+
 .sidebar a:hover {
 color: #666;
+}
+
+/* Center video player */
+.video-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+iframe {
+width: 640px;
+height: 480px;
 }
 </style>
 </head>
@@ -44,40 +63,8 @@ color: #666;
 </ul>
 </div>
 
-<title>Ambutakam: The Rise & Fall of Dreamybull Documentary (2023) | Soap4today</title>
-<link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
-<style>
-.center {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-</style>
-</head>
->
-<div class="center">
-<video
-id="my-video"
-class="video-js"
-controls
-preload="auto"
-width="750"
-height="500"
-poster="https://cdn.glitch.global/50728448-590e-4215-bf87-f7a5d528c9d3/MV5BZGRkYWNkYmYtNjQzYy00YzY4LWE0ZTktNjAzMzRlODZjMmZmXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg?v=1693373548674"
-data-setup="{}"
->
-<source src="https://cdn.glitch.me/0e38d4f4-37c1-4ea6-a1cc-53f75dee50a6/archive.mp4?v=1693286648997" type="video/mp4" />
-<p class="vjs-no-js">
-To view this video please enable JavaScript, and consider upgrading to a
-web browser that
-<a href="https://videojs.com/html5-video-support/" target="_blank"
->supports HTML5 video</a
->
-</p>
-</video>
+<div class="video-container">
+<iframe src="https://drive.google.com/file/d/1zb9F8cDv2xwsn0EZvM-5_e29GnC1XGFa/preview" allow="autoplay" allowfullscreen></iframe>
 </div>
-
-<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </body>
 </html>
